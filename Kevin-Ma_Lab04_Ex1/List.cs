@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Kevin_Ma_Lab04_Ex1
+﻿namespace Kevin_Ma_Lab04_Ex1
 {
     /// <summary>
     /// This class represents a Linked List whose nodes contain Double values.
     /// </summary>
-    class List
+    public class List
     {
         //FIELDS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         private ListNode firstNode;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Kevin_Ma_Lab04_Ex1
+﻿namespace Kevin_Ma_Lab04_Ex1
 {
     /// <summary>
     /// This class represents a list node whose values are of the type Double.

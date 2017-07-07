@@ -66,6 +66,7 @@
             if (IsEmpty())
             {
                 //throw exception, can't remove from an empty list
+                throw new EmptyListException(name);
             }
 
             //retrieve the data before removing the node
@@ -79,6 +80,47 @@
             else
             {
                 firstNode = firstNode.Next;
+                //once there is no reference to an object, C#'s CLR will remove it (garbage collection)
+            }
+
+            return removedValue;
+        }
+
+        /// <summary>
+        /// Removes the last node from the backc of the List.
+        /// </summary>
+        /// <returns>The double value contained in the removed list node.</returns>
+        public double RemoveFromBack()
+        {
+            if (IsEmpty())
+            {
+                //throw exception, can't remove from an empty list
+                throw new EmptyListException(name);
+            }
+
+            //retrieve the data before removing the node
+            double removedValue = lastNode.Data;
+
+            //if only one item in list, list becomes empty after removal
+            if (firstNode == lastNode)
+            {
+                firstNode = lastNode = null;
+            }
+            else
+            {
+                //need to find lastNode's previous node
+                //loop through all nodes because this is not a doubly-linked list (no previousNode)
+                ListNode current = firstNode;
+
+                while (current.Next != lastNode)
+                {
+                    //move to next node
+                    current = current.Next;
+                }
+
+                //current becomes lastNode
+                lastNode = current;
+                current.Next = null;
             }
 
             return removedValue;

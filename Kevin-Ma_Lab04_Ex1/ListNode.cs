@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Kevin_Ma_Lab04_Ex1
 {
+    /// <summary>
+    /// This class represents a list node whose values are of the type Double.
+    /// </summary>
     public class ListNode
     {
         //PROPERTIES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

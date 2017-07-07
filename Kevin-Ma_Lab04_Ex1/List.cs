@@ -1,4 +1,6 @@
-﻿namespace Kevin_Ma_Lab04_Ex1
+﻿using System;
+
+namespace Kevin_Ma_Lab04_Ex1
 {
     /// <summary>
     /// This class represents a Linked List whose nodes contain Double values.
@@ -137,6 +139,32 @@
         {
             //if firstNode == null that means there is no node in the list
             return firstNode == null;
+        }
+
+        /// <summary>
+        /// Outputs the List's contents to the console
+        /// </summary>
+        public void Display()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine($"Empty {name}");
+            }
+            else
+            {
+                Console.Write($"The {name} contains: ");
+
+                //iterate through all nodes in the list to display them
+                ListNode current = firstNode;
+
+                while (current != null)
+                {
+                    Console.Write($"{current.Data} ");
+                    current = current.Next;
+                }
+
+                Console.WriteLine("\n");
+            }
         }
     }
 }

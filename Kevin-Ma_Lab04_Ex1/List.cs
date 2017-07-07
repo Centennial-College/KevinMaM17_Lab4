@@ -129,6 +129,41 @@ namespace Kevin_Ma_Lab04_Ex1
         }
 
         /// <summary>
+        /// Searches the linked list for a list node containing the param double value.
+        /// </summary>
+        /// <param name="value">The double value we are searching for in the linked list.</param>
+        /// <returns>
+        ///     If the element is found in the linked list, a reference to the list node containing the 
+        ///     param value as its data.
+        ///     
+        ///     If not found, returns reference to null.
+        /// </returns>
+        public ListNode Search(double value)
+        {
+            if (IsEmpty())
+            {
+                //cannot search an empty list
+                throw new EmptyListException(name);
+            }
+            else
+            {
+                //linked lists by nature are inefficient for searching.
+                //we need to iterate through all the nodes in the list to search for an element
+                ListNode current = firstNode;
+
+                while (current != null)
+                {
+                    //if found matching element, end loop and return found node
+                    if (current.Data == value)
+                        return current;
+                }
+            }
+
+            //no node found
+            return null;
+        }
+
+        /// <summary>
         /// Used to check whether the list is empty or not.
         /// </summary>
         /// <returns>

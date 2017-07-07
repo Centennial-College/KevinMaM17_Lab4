@@ -164,6 +164,27 @@ namespace Kevin_Ma_Lab04_Ex1
         }
 
         /// <summary>
+        /// Counts the number of elements in the linked list
+        /// </summary>
+        /// <returns>an integer which represents the number of elements in the linked list</returns>
+        public int Count()
+        {
+            if (IsEmpty())
+                return 0;
+
+            int numberOfNodesInList = 0;
+            ListNode current = firstNode;
+
+            while (current != null)
+            {
+                numberOfNodesInList++;
+                current = current.Next;
+            }
+
+            return numberOfNodesInList;
+        }
+
+        /// <summary>
         /// Used to check whether the list is empty or not.
         /// </summary>
         /// <returns>

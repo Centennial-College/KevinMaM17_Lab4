@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kevin-Ma_Lab04_Ex1_Test", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kevin-Ma_Lab04_Ex2", "Kevin-Ma_Lab04_Ex2\Kevin-Ma_Lab04_Ex2.csproj", "{6FF79FB4-C2DE-458E-B683-3DB7075959CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kevin-Ma_Lab04_Ex2_Test", "Kevin-Ma_Lab04_Ex2_Test\Kevin-Ma_Lab04_Ex2_Test.csproj", "{F17CAC45-E1CE-4C34-9907-AB7FE5507D38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6FF79FB4-C2DE-458E-B683-3DB7075959CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FF79FB4-C2DE-458E-B683-3DB7075959CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FF79FB4-C2DE-458E-B683-3DB7075959CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17CAC45-E1CE-4C34-9907-AB7FE5507D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17CAC45-E1CE-4C34-9907-AB7FE5507D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17CAC45-E1CE-4C34-9907-AB7FE5507D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17CAC45-E1CE-4C34-9907-AB7FE5507D38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

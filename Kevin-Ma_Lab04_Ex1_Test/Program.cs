@@ -21,6 +21,8 @@ namespace Kevin_Ma_Lab04_Ex1_Test
             double num4 = 92323231;
 
             //use List insert methods
+            Console.WriteLine("INSERTING items into the list!");
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine($"There are currently {linkedList.Count()} numbers in the list.");
             linkedList.Display();
             Console.WriteLine();
@@ -44,6 +46,8 @@ namespace Kevin_Ma_Lab04_Ex1_Test
             Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
 
             //use List remove methods
+            Console.WriteLine("REMOVING items from the list!");
+            Console.WriteLine("---------------------------------------------------------------");
             try
             {
                 double removedValue = linkedList.RemoveFromFront();
@@ -74,6 +78,8 @@ namespace Kevin_Ma_Lab04_Ex1_Test
             Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
 
             //use List Search methods
+            Console.WriteLine("SEARCHING for items from the list!");
+            Console.WriteLine("---------------------------------------------------------------");
             try
             {
                 Console.WriteLine($"Re-inserting {num1}, {num2}, {num3}, and {num4} back into the list");

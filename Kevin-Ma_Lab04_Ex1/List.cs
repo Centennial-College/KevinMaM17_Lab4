@@ -24,7 +24,7 @@ namespace Kevin_Ma_Lab04_Ex1
 
         //PUBLIC METHODS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         /// <summary>
-        /// Inserts object at front of the List.
+        /// Inserts double value at front of the List.
         /// If list is empty, firstNode and lastNode will refer to the inserted node.
         /// Otherwise, firstNode refers to the newly inserted node, and the new node points to the 
         /// previous firstNode.

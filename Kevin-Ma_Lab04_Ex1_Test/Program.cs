@@ -98,6 +98,9 @@ namespace Kevin_Ma_Lab04_Ex1_Test
             {
                 Console.Error.WriteLine($"\n{ex}");
             }
+
+            Console.WriteLine($"\nPress enter to continue....");
+            Console.ReadLine();
         }
     }
 }

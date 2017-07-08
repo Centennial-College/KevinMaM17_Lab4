@@ -133,8 +133,8 @@ namespace Kevin_Ma_Lab04_Ex1
         /// </summary>
         /// <param name="value">The double value we are searching for in the linked list.</param>
         /// <returns>
-        ///     If the element is found in the linked list, a reference to the list node containing the 
-        ///     param value as its data.
+        ///     If the element is found in the linked list, a reference to the first matching list node 
+        ///     containing the param value as its data is returned.
         ///     
         ///     If not found, returns reference to null.
         /// </returns>
@@ -156,6 +156,8 @@ namespace Kevin_Ma_Lab04_Ex1
                     //if found matching element, end loop and return found node
                     if (current.Data == value)
                         return current;
+
+                    current = current.Next;
                 }
             }
 

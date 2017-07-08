@@ -84,15 +84,34 @@ namespace Kevin_Ma_Lab04_Ex1_Test
                 Console.WriteLine($"There are currently {linkedList.Count()} numbers in the list.");
                 linkedList.Display();
 
+                Console.WriteLine("---------------------------------------------------------------");
+
+                linkedList.Display();
                 Console.WriteLine($"Searching the list for the number: {num3}");
-                ListNode queryResultNode = linkedList.Search(num3);
-                Console.WriteLine($"{num3} was {(queryResultNode == null ? "not " : "")}found in the list!");
+                double queryResult;
+                try
+                {
+                    queryResult = linkedList.Search(num3);
+                    Console.WriteLine($"{queryResult} was found in the list!");
+                }
+                catch (ElementNotFoundException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
 
                 Console.WriteLine();
 
-                Console.WriteLine($"Searching the list for the number: {22424.11}");
-                queryResultNode = linkedList.Search(22424.11);
-                Console.WriteLine($"{22424.11} was {(queryResultNode == null ? "not " : "")}found in the list!");
+                linkedList.Display();
+                Console.WriteLine($"Searching the list for the number: 22424.11");
+                try
+                {
+                    queryResult = linkedList.Search(22424.11);
+                    Console.WriteLine($"{queryResult} was found in the list!");
+                }
+                catch (ElementNotFoundException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
             catch (EmptyListException ex)
             {

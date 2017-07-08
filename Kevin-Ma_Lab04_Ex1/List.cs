@@ -8,8 +8,8 @@ namespace Kevin_Ma_Lab04_Ex1
     public class List
     {
         //FIELDS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        private ListNode firstNode;
-        private ListNode lastNode;
+        private ListNode<double> firstNode;
+        private ListNode<double> lastNode;
         private string name; //used in displaying the List
 
         //CONSTRUCTORS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -34,11 +34,11 @@ namespace Kevin_Ma_Lab04_Ex1
         {
             if (IsEmpty())
             {
-                firstNode = lastNode = new ListNode(insertValue);
+                firstNode = lastNode = new ListNode<double>(insertValue);
             }
             else
             {
-                firstNode = new ListNode(insertValue, firstNode);
+                firstNode = new ListNode<double>(insertValue, firstNode);
             }
         }
 
@@ -51,11 +51,11 @@ namespace Kevin_Ma_Lab04_Ex1
         {
             if (IsEmpty())
             {
-                firstNode = lastNode = new ListNode(insertValue);
+                firstNode = lastNode = new ListNode<double>(insertValue);
             }
             else
             {
-                lastNode = lastNode.Next = new ListNode(insertValue);
+                lastNode = lastNode.Next = new ListNode<double>(insertValue);
             }
         }
 
@@ -112,7 +112,7 @@ namespace Kevin_Ma_Lab04_Ex1
             {
                 //need to find lastNode's previous node
                 //loop through all nodes because this is not a doubly-linked list (no previousNode)
-                ListNode current = firstNode;
+                ListNode<double> current = firstNode;
 
                 while (current.Next != lastNode)
                 {
@@ -148,7 +148,7 @@ namespace Kevin_Ma_Lab04_Ex1
             {
                 //linked lists by nature are inefficient for searching.
                 //we need to iterate through all the nodes in the list to search for an element
-                ListNode current = firstNode;
+                ListNode<double> current = firstNode;
 
                 while (current != null)
                 {
@@ -174,7 +174,7 @@ namespace Kevin_Ma_Lab04_Ex1
                 return 0;
 
             int numberOfNodesInList = 0;
-            ListNode current = firstNode;
+            ListNode<double> current = firstNode;
 
             while (current != null)
             {
@@ -212,7 +212,7 @@ namespace Kevin_Ma_Lab04_Ex1
                 Console.Write($"The {name} contains: ");
 
                 //iterate through all nodes in the list to display them
-                ListNode current = firstNode;
+                ListNode<double> current = firstNode;
 
                 while (current != null)
                 {

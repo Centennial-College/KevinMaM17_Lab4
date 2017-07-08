@@ -40,8 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="QueueInheritance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kevin-Ma_Lab04_Ex1\Kevin-Ma_Lab04_Ex1.csproj">
+      <Project>{7b3434bb-87f8-4f1a-803e-1c048a5ecc66}</Project>
+      <Name>Kevin-Ma_Lab04_Ex1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

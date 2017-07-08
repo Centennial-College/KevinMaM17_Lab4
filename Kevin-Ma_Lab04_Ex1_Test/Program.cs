@@ -50,22 +50,22 @@ namespace Kevin_Ma_Lab04_Ex1_Test
             Console.WriteLine("---------------------------------------------------------------");
             try
             {
-                double removedValue = linkedList.RemoveFromFront();
+                double removedValue = (double)linkedList.RemoveFromFront();
                 Console.WriteLine($"{removedValue} removed from the front of the list.");
                 Console.WriteLine($"There are currently {linkedList.Count()} numbers in the list.");
                 linkedList.Display();
 
-                removedValue = linkedList.RemoveFromFront();
+                removedValue = (double)linkedList.RemoveFromFront();
                 Console.WriteLine($"{removedValue} removed from the front of the list.");
                 Console.WriteLine($"There are currently {linkedList.Count()} numbers in the list.");
                 linkedList.Display();
 
-                removedValue = linkedList.RemoveFromBack();
+                removedValue = (double)linkedList.RemoveFromBack();
                 Console.WriteLine($"{removedValue} removed from the back of the list.");
                 Console.WriteLine($"There are currently {linkedList.Count()} numbers in the list.");
                 linkedList.Display();
 
-                removedValue = linkedList.RemoveFromBack();
+                removedValue = (double)linkedList.RemoveFromBack();
                 Console.WriteLine($"{removedValue} removed from the back of the list.");
                 Console.WriteLine($"There are currently {linkedList.Count()} numbers in the list.");
                 linkedList.Display();
@@ -97,7 +97,7 @@ namespace Kevin_Ma_Lab04_Ex1_Test
                 double queryResult;
                 try
                 {
-                    queryResult = linkedList.Search(num3);
+                    queryResult = (double)linkedList.Search(num3);
                     Console.WriteLine($"{queryResult} was found in the list!");
                 }
                 catch (ElementNotFoundException ex)
@@ -111,7 +111,7 @@ namespace Kevin_Ma_Lab04_Ex1_Test
                 Console.WriteLine($"Searching the list for the number: 22424.11");
                 try
                 {
-                    queryResult = linkedList.Search(22424.11);
+                    queryResult = (double)linkedList.Search(22424.11);
                     Console.WriteLine($"{queryResult} was found in the list!");
                 }
                 catch (ElementNotFoundException ex)

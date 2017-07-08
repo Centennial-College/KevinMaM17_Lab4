@@ -29,7 +29,7 @@ namespace Kevin_Ma_Lab04_Ex2
         /// <returns>The double data value contained in the first item of the stack</returns>
         public double Pop()
         {
-            return RemoveFromFront();
+            return (double)RemoveFromFront();
         }
 
         /// <summary>

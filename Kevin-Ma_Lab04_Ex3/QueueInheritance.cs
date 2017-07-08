@@ -7,14 +7,21 @@ namespace Kevin_Ma_Lab04_Ex3
     /// It also inerhits from the user defined List class which is an implementation of a Linked List 
     /// data structure.
     /// </summary>
-    public class QueueInheritance : List
+    public class QueueInheritance : List<string>
     {
         //CONSTRUCTORS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         //pass name "queue" to List constructor
         public QueueInheritance() : base("queue") { }
 
         //PUBLIC METHODS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        public void Enqueue(string dataValue)
+        {
+            InsertAtBack(dataValue);
+        }
 
-
+        public string Dequeue()
+        {
+            return (string)RemoveFromFront();
+        }
     }
 }

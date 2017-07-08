@@ -129,7 +129,7 @@ namespace Kevin_Ma_Lab04_Ex1
         }
 
         /// <summary>
-        /// Searches the linked list for a list node containing the param double value.
+        /// Searches the linked list for a list node containing a given element.
         /// </summary>
         /// <param name="value">The double value we are searching for in the linked list.</param>
         /// <returns>

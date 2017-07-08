@@ -31,5 +31,28 @@ namespace Kevin_Ma_Lab04_Ex2
         {
             return RemoveFromFront();
         }
+
+        /// <summary>
+        /// Returns the double data value at the top of the Stack without removing it.
+        /// Similar to Pop() but does not modify the stack.
+        /// </summary>
+        /// <returns>The double data value at the top of the stack.</returns>
+        public double Peek()
+        {
+            if (IsEmpty())
+            {
+                //cannot peek an empty stack
+                throw new EmptyListException("stack");
+            }
+            else
+            {
+                //since we do not have access to the private fields of the base linked list implementation
+                //we need to have a workaround where we can see the top value while giving off the 
+                //impression to the client that the stack was not modified
+                var topNode = Pop();
+                Push(topNode);
+                return topNode;
+            }
+        }
     }
 }

@@ -63,25 +63,13 @@ namespace Kevin_Ma_Lab04_Ex2_Test
             Console.WriteLine("---------------------------------------------------------------");
             try
             {
-                Console.WriteLine($"POPPING {stack.Pop()} from the stack.");
-                Console.WriteLine($"Currently, the top item in the stack is {stack.Peek()}");
-                Console.WriteLine("Using List's Display method to see entire contents of the stack:");
-                stack.Display();
-
-                Console.WriteLine($"POPPING {stack.Pop()} from the stack.");
-                Console.WriteLine($"Currently, the top item in the stack is {stack.Peek()}");
-                Console.WriteLine("Using List's Display method to see entire contents of the stack:");
-                stack.Display();
-
-                Console.WriteLine($"POPPING {stack.Pop()} from the stack.");
-                Console.WriteLine($"Currently, the top item in the stack is {stack.Peek()}");
-                Console.WriteLine("Using List's Display method to see entire contents of the stack:");
-                stack.Display();
-
-                Console.WriteLine($"POPPING {stack.Pop()} from the stack.");
-                Console.WriteLine($"Currently, the top item in the stack is {stack.Peek()}");
-                Console.WriteLine("Using List's Display method to see entire contents of the stack:");
-                stack.Display();
+                while (true)
+                {
+                    Console.WriteLine($"POPPING {stack.Pop()} from the stack.");
+                    Console.WriteLine($"Currently, the top item in the stack is {stack.Peek()}");
+                    Console.WriteLine("Using List's Display method to see entire contents of the stack:");
+                    stack.Display();
+                }
             }
             catch (EmptyListException e)
             {
